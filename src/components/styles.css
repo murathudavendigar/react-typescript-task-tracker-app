@@ -29,8 +29,25 @@
   right: 0px;
   border: none;
   font-size: 15px;
-  background-color: #2b3a55;
+  background-color: #1c315e;
   transition: 0.3 all;
   box-shadow: 0 0 10px black;
-  color: #f2e5e5;
+  color: #e6e2c3;
+  cursor: pointer;
+}
+
+.input__submit:hover {
+  background-color: #36518d;
+}
+
+.input__submit:active {
+  transform: scale(0.95);
+  box-shadow: 0 0 5px black;
+}
+
+.todos {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  flex-wrap: wrap;
 }
