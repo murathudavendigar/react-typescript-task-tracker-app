@@ -5,6 +5,9 @@
   align-items: center;
 }
 
+.welcome__text {
+  color: #88a47c;
+}
 .input__box {
   width: 100%;
   border-radius: 50px;
@@ -30,10 +33,11 @@
   border: none;
   font-size: 15px;
   background-color: #1c315e;
-  transition: 0.3 all;
+  transition: 0.2s all;
   box-shadow: 0 0 10px black;
   color: #e6e2c3;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 .input__submit:hover {
@@ -50,4 +54,69 @@
   justify-content: center;
   width: 90%;
   flex-wrap: wrap;
+}
+
+.todos__single {
+  display: flex;
+  width: 90%;
+  border-radius: 5px;
+  padding: 22px;
+  margin-top: 15px;
+  background-color: #88a47c;
+  color: #0f1f42;
+  font-weight: 600;
+}
+
+.todos__single--text {
+  flex: 1;
+  padding: 5px;
+  border: none;
+  font-size: 22px;
+}
+
+.todos__single--text:focus {
+  outline: none;
+}
+.todos__single--text--completed {
+  flex: 1;
+  padding: 5px;
+  border: none;
+  font-size: 22px;
+  text-decoration: line-through;
+}
+
+.todos__single--text--completed:focus {
+  outline: none;
+}
+
+.todos__single--text--edit {
+  flex: 1;
+  padding: 5px;
+  border: none;
+  font-size: 22px;
+  border-radius: 5px;
+  background-color: #e6e2c3;
+}
+
+.icon {
+  margin-left: 10px;
+  font-size: 25px;
+  cursor: pointer;
+  transition: 0.2s all;
+}
+
+.icon:hover {
+  color: #1c315e;
+}
+
+@media (max-width: 700px) {
+  .input__form {
+    width: 95%;
+  }
+  .todos {
+    width: 95%;
+  }
+  .todos__single {
+    width: 100%;
+  }
 }
